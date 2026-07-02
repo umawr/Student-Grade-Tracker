@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f6fa;
+}
+
+.mainHeading {
+  color: black;
+  font-size: 2rem;
+}
+.description {
+  font-size: 0.8rem;
+  color: #6b7099;
+}
+.header {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overview {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: row; 
+  justify-content: center; /* Centers divs horizontally */
+  align-items: center; /* Centers divs vertically */
+  gap: 20px; /* Adds space between your 4 divs */
+}
+.totalStudentsContainer,
+.classAverageContainer,
+.highestScoreContainer,
+.passingRateContainer {
+  height: 60px;
+  width: 170px;
+  border-radius: 10px;
+  background-color: white;
+  border-style: solid;
+  border-color: #e4e6ef;
+  border-width: 1px;
+  padding: 0.9rem;
+  font-size: 0.75rem;
+  color: #6b7099;
+}
+.totalStudents {
+  color: rgb(0, 0, 0);
+  padding-top: 0.4rem;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.addAStudentContainer {
+  background-color: white; /* Change from blue to match card */
+  padding: 2rem;
+  border-radius: 12px;
+  padding-bottom: 3rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e6ef;
+  max-width: 790px; /* Use max-width instead of fixed width */
+  margin: 20px auto; /* Centers the card on page */
+}
+
+.statsFunctions {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end; /* Aligns button with the bottom of inputs */
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Makes both inputs take equal space */
+}
+
+.addButtoon {
+  background-color: #5a4ad1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 34px; /* Matches input height */
+}
+.addButtoon:hover {
+  background-color: #4132b1;
+}
+.addAStudentContainerHeading,
+.studentName,
+.overallScore,
+.statsFunctions {
+  background-color: white;
+}
+.inputBar {
+  height: 2rem;
+  border-radius: 0.4rem;
+  border-color: #e4e6ef;
+  border-width: 0.5px;
+  padding-left: 0.5rem;
+  outline: none;
+}
+.inputBar:focus {
+  border-color: #5a4ad1;
+  border-width: 1px;
+  outline: none;
+}
+.addAStudentContainerHeading {
+  font-size: 1rem;
+  padding-top: -4rem;
+  font-weight: 600;
+}
+.studentName,
+.overallScore {
+  font-size: 0.8rem;
+  padding: 1rem 0 0.5rem 0;
+  color: #6b7099;
+  font-weight: 500;
+}
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 850px;
+  margin: 20px auto;
+  gap: 20px;
+}
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  flex: 7;
+  height: 2rem;
+  border-color: #e4e6ef;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding-left: 1rem;
+}
+.filterSelect {
+  flex: 2;
+  height: 2.2rem;
+  border-color: #e4e6ef;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.searchBar:focus,
+.filterSelect:focus {
+  border-color: #5a4ad1;
+  border-width: 1px;
+  outline: none;
+}
+
+.serialNumber,
+.names,
+.scores,
+.grades,
+.action {
+  color: #60658b;
+  background-color: white;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.studentRow .serialNumber,
+.studentRow .names,
+.studentRow .scores,
+.studentRow .grades,
+.studentRow .action {
+  font-size: 0.85rem;
+  color: #2e3050;
+  font-weight: 500;
+}
+
+.studentTable {
+  background-color: white;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e6ef;
+  max-width: 850px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.gradeTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.gradeTable th,
+.gradeTable td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+.gradeTable thead th {
+  color: #60658b;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.gradeTable tbody tr {
+  border-top: 1px solid #e4e6ef;
+}
+
+.gradeTable td.names {
+  font-weight: 500;
+}
+
+.scores,
+.grades,
+.action {
+  text-align: center;
+}
+
+.serialNumber {
+  width: 60px;
+}
+.names {
+  width: 220px;
+}
+.scores {
+  width: 150px;
+  text-align: center;
+}
+.grades {
+  width: 120px;
+  text-align: center;
+}
+.action {
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 6px;
+}
+
+.deleteBtn:hover {
+  background-color: #fdecea;
+}

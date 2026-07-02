@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sgt.css" />
+    <title>Grade Tracker</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="mainHeadingConatiner">
+          <h1 class="mainHeading">Student Grade Tracker</h1>
+        </div>
+        <p class="description">
+          Add students, enter their overall score, and grades are calculated
+          automatically.
+        </p>
+      </div>
+      <div class="overview">
+        <div class="totalStudentsContainer">
+          TOTAL STUDENTS
+          <div class="totalStudents" id="totalStudentsValue">12</div>
+        </div>
+        <div class="classAverageContainer">
+          CLASS AVERAGE
+          <div class="totalStudents" id="classAverageValue">85%</div>
+        </div>
+        <div class="highestScoreContainer">
+          HIGHEST SCORE
+          <div class="totalStudents" id="highestScoreValue">98</div>
+        </div>
+        <div class="passingRateContainer">
+          PASSING RATE
+          <div class="totalStudents" id="passingRateValue">93%</div>
+        </div>
+      </div>
+      <div class="addAStudentContainer">
+        <div class="addAStudentContainerHeading">Add a Student</div>
+
+        <div class="statsFunctions">
+          <div class="inputGroup">
+            <p class="studentName">Student name</p>
+            <input
+              type="text"
+              class="inputBar"
+              placeholder="e.g. Arjun Sharma"
+              id="studentName"
+            />
+          </div>
+
+          <div class="inputGroup">
+            <p class="overallScore">Overall score (0 - 100)</p>
+            <input
+              type="number"
+              id="studentScore"
+              class="inputBar"
+              placeholder="e.g. 87"
+              min="1"
+              max="100"
+            />
+          </div>
+          <button class="addButtoon" id="addStudentBtn">+ Add</button>
+        </div>
+      </div>
+      <div class="scoreList">
+        <div class="searchContainer">
+          <input
+            type="text"
+            class="searchBar"
+            placeholder="Search by name..."
+          />
+          <select class="filterSelect">
+            <option value="all">All grades</option>
+            <option value="A">A (90 to 100)</option>
+            <option value="B">B (80 to 89)</option>
+            <option value="C">C (70 to 79)</option>
+            <option value="D">D (60 to 69)</option>
+            <option value="F">F (below 60)</option>
+          </select>
+        </div>
+        <div class="studentTable">
+          <table class="gradeTable">
+            <thead>
+              <tr>
+                <th class="serialNumber">#</th>
+                <th class="names">NAME</th>
+                <th class="scores">SCORE</th>
+                <th class="grades">GRADE</th>
+                <th class="action">ACTION</th>
+              </tr>
+            </thead>
+            <tbody class="studentList">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="sgt.js"></script>
+</html>
